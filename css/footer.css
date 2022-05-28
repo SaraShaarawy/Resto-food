@@ -1,0 +1,35 @@
+/* Footer */
+footer .box-container .box {
+    border: none;
+    gap: 0;
+}
+
+footer .heading {
+    text-align: left;
+}
+
+footer .box-container .box a {
+    font-size: 1.15rem;
+    color: var(--light-color);
+}
+
+footer .box-container .box li {
+    padding-bottom: 0.5rem;
+}
+
+footer .box-container .box a:hover {
+    color: var(--green);
+}
+
+footer .credit {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--black);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+footer .heading {
+    font-size: 1.5rem;
+}

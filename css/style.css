@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.2s linear;
+
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 90%;
+}
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Common */
+
+section:nth-child(even) {
+    background-color: #eee;
+}
+
+section, footer {
+    padding: 1rem 7%;
+}
+
+.sub-heading, .heading {
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+.sub-heading {
+    color: var(--green);
+    font-size: 1.6rem;
+
+}
+.heading {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.stars {
+    color: var(--green);
+    font-size: 1.1rem;
+    padding: 0.2rem 0;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box-container .box {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+
+}
+
+section .box-container .box {
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.dishes .box-container .box .fa-eye,
+.dishes .box-container .box .fa-heart {
+    position: absolute;
+    top: 1rem;
+    background: #eee;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.dishes .box-container .box .fa-eye:hover,
+.dishes .box-container .box .fa-heart:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.dishes .box-container .box .fa-heart {
+    left: -10rem;
+}
+
+.dishes .box-container .box .fa-eye {
+    right: -10rem;
+}
+
+.dishes .box-container .box:hover .fa-eye {
+    right: 1rem;
+}
+
+.dishes .box-container .box:hover .fa-heart {
+    left: 1rem;
+}
+
+.box-container .box img {
+    height: 15rem;
+    width: 100%;
+    /* margin: 1rem 0; */
+}
+
+.box-container .box .dish-name {
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.box-container .box span {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+.dishes .box-container .box span {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+
+
+/* Menu section */
+.menu .box-container .box img {
+    border-radius: 0.5rem;
+}
+
+.menu .box-container .box .dish-name {
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+
+.menu .box-container .box p {
+    font-size: 1.1rem;
+    color: var(--light-color);
+    padding-bottom: 1rem;
+}
+
+
+
+/* Order section */
+
+.order form {
+    max-width: 70rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 00.5rem;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+}
+
+.order form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.order form .input-box .input-header {
+    display: block;
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.1rem 0;
+}
+
+.order form .input-box .input {
+    width: 49%;
+}
+.order form .input-box .input input, .order form .input-box .input textarea {
+    padding: 0.9rem;
+    border-radius: 0.3rem;
+    background: rgba(238, 238, 238, 0.856);
+    width: 100%;
+    border: none;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    margin: 0.5rem 0px;
+    box-shadow: 0 0.2rem 0.2rem rgba(187, 187, 187, 0.63);
+}
+
+.order form .input-box .input input::placeholder,
+.order form .input-box .input textarea::placeholder,
+.order form .input-box .input input[type="datetime-local"]
+{
+    color: var(--black);
+    
+}
+
+.order form .input-box .input input:focus,
+.order form .input-box .input textarea:focus {
+    outline: none;
+    border: 0.1rem solid var(--light-color);
+}
+
+.order form .input-box .input textarea {
+    resize: none;
+    font-size: 1.1rem;
+}
+
+.order form .button {
+    margin-top: 0;
+}
