@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600&family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/ce9483ab50.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    
+    <title>Resto Restaurant</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <i class="fa-solid fa-utensils logo-icon"></i>
+            <span class="title">Resto.</span>
+          </div>
+
+          <nav class="nav-bar">
+            <a href="#home" class="active menu-item">Home</a>
+            <a href="#dishes" class="menu-item">Dishes</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#menu" class="menu-item">Menu</a>
+            <a href="#review" class="menu-item">Review</a>
+            <a href="#order" class="menu-item">Order</a>
+          </nav>
+
+          <div class="side-menu">
+            <li class="side-menu-item menu-item">
+              <i class="fa-solid fa-bars menu-bar" onclick="toggleBar()"></i>
+            </li>
+            <li class="side-menu-item menu-item">
+              <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+            </li>
+            <li class="side-menu-item menu-item">
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li class="side-menu-item menu-item">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Search -->
+    <form action="" class="search-form">
+      <input
+        type="search"
+        name=""
+        id="search-box"
+        placeholder="Search here.."
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times close" onclick="exit()"></i>
+    </form>
+
+    <section class="home" id="home">
+      <div class="swiper mySwiper container home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our special dishes</span>
+              <h3>spicy noodles</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente magnam harum velit?
+              </p>
+
+              <a href="#" class="button">order now</a>
+            </div>
+
+            <div class="image">
+              <img src="images/home-img-1.png" alt="home image 1" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our special dishes</span>
+              <h3>fried chicken</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente magnam harum velit?
+              </p>
+
+              <a href="#" class="button">order now</a>
+            </div>
+
+            <div class="image">
+              <img src="images/home-img-2.png" alt="home image 1" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our special dishes</span>
+              <h3>hot pizza</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente magnam harum velit?
+              </p>
+
+              <a href="#" class="button">order now</a>
+            </div>
+
+            <div class="image">
+              <img src="images/home-img-3.png" alt="home image 1" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- Our Dishes Section -->
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">our dishes</h2>
+      <h1 class="heading">popular dishes</h1>
+      
+    <div class="all-dishes box-container">
+      <div class="dish-content box">
+        <a href="" class="fas fa-heart"></a>
+        <a href="" class="fas fa-eye"></a>
+        <img src="images/dish-1.png" alt="dish1">
+        <h3 class="dish-name">cheese burger</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+          <span>$15.99</span>
+          <a href="#" class="button">add to cart</a>
+      </div>
+      
+      <div class="dish-content box">
+          <a href="" class="fas fa-heart"></a>
+          <a href="" class="fas fa-eye"></a>
+        <img src="images/dish-2.png" alt="dish1">
+        <h3 class="dish-name">tasty food</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+          <span>$15.99</span>
+          <a href="#" class="button">add to cart</a>
+      </div>
+     
+      <div class="dish-content box">
+        <a href="" class="fas fa-heart"></a>
+        <a href="" class="fas fa-eye"></a>
+        <img src="images/dish-3.png" alt="dish1">
+        <h3 class="dish-name">Chicken</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+          <span>$15.99</span>
+          <a href="#" class="button">add to cart</a>
+      </div>
+      <div class="dish-content box">
+        <a href="" class="fas fa-heart"></a>
+        <a href="" class="fas fa-eye"></a>
+        <img src="images/dish-4.png" alt="dish1">
+        <h3 class="dish-name">pizza</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+          <span>$15.99</span>
+          <a href="#" class="button">add to cart</a>
+      </div>
+      <div class="dish-content box">
+        <a href="" class="fas fa-heart"></a>
+        <a href="" class="fas fa-eye"></a>
+        <img src="images/dish-5.png" alt="dish1">
+        <h3 class="dish-name">ice cream</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+        <div class="details">
+          <span>$15.99</span>
+          <a href="#" class="button">add to cart</a>
+        </div>
+      </div>
+      <div class="dish-content box">
+        <a href="" class="fas fa-heart"></a>
+        <a href="" class="fas fa-eye"></a>
+        <img src="images/dish-6.png" alt="dish1">
+        <h3 class="dish-name">chicken ranch</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+          <span>$15.99</span>
+          <a href="#" class="button">order now</a>
+      </div>
+
+    </div></section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h3 class="sub-heading">about us</h3>
+      <h1 class="heading">why to choose us</h1>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/about-img.png" alt="about">
+        </div>
+        <div class="about-info">
+          <h3>best food in the country</h3>
+          <p class="food-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas modi hic corrupti sapiente aperiam sit placeat, dolore consectetur exercitationem animi!</p>
+          <!-- <p class="food-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, veniam.</p> -->
+          
+          <div class="features">
+            <div class="feature-type">
+              <i class="fa-solid fa-truck"></i>
+              <span>free delivery</span>
+            </div>
+            
+            <div class="feature-type">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <span>easy payment</span>
+            </div>
+            <div class="feature-type">
+              <i class="fa-solid fa-headset"></i>
+              <span>24/7 service</span>
+            </div>
+          </div>
+          <a href="#" class="button">learn more</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">our menu</h3>
+      <h1 class="heading">today's specialy</h1>
+      <div class="menu-items all-dishes box-container">
+        <div class="menu-item dish-content box box">
+          <img src="images/menu-1.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">Chicken-Fil-A Sandwich</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+        
+        <div class="menu-item dish-content box">
+          <img src="images/menu-2.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">Chicken Couscous</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+        
+        <div class="menu-item dish-content box">
+          <img src="images/menu-3.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">Chicken Fajita Mac And Cheese</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+        <div class="menu-item dish-content box">
+          <img src="images/menu-4.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">waffle</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+        <div class="menu-item dish-content box">
+          <img src="images/menu-5.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">blueberry</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+        <div class="menu-item dish-content box">
+          <img src="images/menu-6.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">ice cream</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+        <div class="menu-item dish-content box">
+          <img src="images/menu-7.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">fresh juice</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+        <div class="menu-item dish-content box">
+          <img src="images/menu-8.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">fruite salad</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+        <div class="menu-item dish-content box">
+          <img src="images/menu-9.jpg" alt="menu dish">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h3 class="dish-name">orange juice</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
+          <span>$15.99</span>
+
+          <a href="#" class="button">add to cart</a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Review section -->
+    <section class="review" id="review">
+      <h3 class="sub-heading">customers' review</h3>
+      <h1 class="heading">what they say</h1>
+
+      <div class="all-reviews swiper mySwiper">
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide reviews-box">
+          <div class="personal-data">
+            <div class="image">
+              <img src="images/pic-1.png" alt="menu dish">
+            </div>
+
+            <div class="content">
+              <h3 class="name">John Deo</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum facere magnam modi provident obcaecati earum quisquam neque similique. Similique voluptatem reprehenderit omnis, ad quia odio!</p>
+            <i class="fa-solid fa-quote-right qoute-icon"></i>
+          </div>
+
+        <div class="swiper-slide reviews-box">
+          <div class="personal-data">
+            <div class="image">
+              <img src="images/pic-2.png" alt="menu dish">
+            </div>
+
+            <div class="content">
+              <h3 class="name">John Deo</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum facere magnam modi provident obcaecati earum quisquam neque similique. Similique voluptatem reprehenderit omnis, ad quia odio!</p>
+            <i class="fa-solid fa-quote-right qoute-icon"></i>
+          </div>
+
+        <div class="swiper-slide reviews-box">
+          <div class="personal-data">
+            <div class="image">
+              <img src="images/pic-3.png" alt="menu dish">
+            </div>
+
+            <div class="content">
+              <h3 class="name">John Deo</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum facere magnam modi provident obcaecati earum quisquam neque similique. Similique voluptatem reprehenderit omnis, ad quia odio!</p>
+            <i class="fa-solid fa-quote-right qoute-icon"></i>
+          </div>
+
+        <div class="swiper-slide reviews-box">
+          <div class="personal-data">
+            <div class="image">
+              <img src="images/pic-4.png" alt="menu dish">
+            </div>
+
+            <div class="content">
+              <h3 class="name">John Deo</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum facere magnam modi provident obcaecati earum quisquam neque similique. Similique voluptatem reprehenderit omnis, ad quia odio!</p>
+            <i class="fa-solid fa-quote-right qoute-icon"></i>
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order" id="order">
+      <h3 class="sub-heading">order now</h3>
+      <h1 class="heading">free and fast</h1>
+
+      <form action="">
+        <div class="input-box">
+          <div class="input">
+            <span class="input-header">your name</span>
+            <input type="text" name="" id="" class="name" placeholder="enter your name..">
+          </div>
+          
+          <div class="input">
+            <span class="input-header">phone number</span>
+            <input type="number" name="" id="" placeholder="enter your number..">
+          </div>
+
+        </div>
+        
+        <div class="input-box">
+          <div class="input">
+            <span class="input-header">your order</span>
+            <input type="text" name="" id="" class="name" placeholder="enter your order..">
+          </div>
+          
+          <div class="input">
+            <span class="input-header">additional food</span>
+            <input type="text" name="" id="" class="name" placeholder="add extra food..">
+          </div>
+
+        </div>
+        
+        <div class="input-box">
+          <div class="input">
+            <span class="input-header">quntity</span>
+            <input type="number" name="" id="" class="name" placeholder="1" min="1">
+          </div>
+          
+          <div class="input">
+            <span class="input-header">Date</span>
+            <input type="datetime-local" name="" id="">
+          </div>
+
+        </div>
+        
+        <div class="input-box">
+          <div class="input">
+            <span class="input-header">your address</span>
+            <textarea name="" id="" cols="30" rows="10" placeholder="enter your address.."></textarea>
+          </div>
+          
+          <div class="input">
+            <span class="input-header">your messaeg</span>
+            <textarea name="" id="" cols="30" rows="10" placeholder="enter your messaeg.."></textarea>
+          </div>
+
+        </div>
+
+        <a href="#" class="button">order now</a>
+
+      </form>
+    </section>
+
+    <footer>
+      <div class="all-dishes box-container">
+        <div class="dish-content box box">
+          <h3 class="heading">location</h3>
+          <ul class="links">
+            <li><a href="#">india</a></li>
+            <li><a href="#">japan</a></li>
+            <li><a href="#">russia</a></li>
+            <li><a href="#">USA</a></li>
+            <li><a href="#">france</a></li>
+          </ul>
+        </div>
+        
+        <div class="dish-content box box">
+          <h3 class="heading">quick links</h3>
+          <ul class="links">
+            <li><a href="#home">home</a></li>
+            <li><a href="#dishes">dishes</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#order">order</a></li>
+          </ul>
+        </div>
+        
+        <div class="dish-content box box">
+          <h3 class="heading">contact info
+          </h3>
+          <ul class="links">
+            <li><a href="#">+123-456-7890</a></li>
+            <li><a href="#">+111-222-3333</a></li>
+            <li><a href="#">Shaikhanas@Gmail.Com</a></li>
+            <li><a href="#">Mohamad.Salimi@Hotmail.Com</a></li>
+            <li><a href="#">Beirut, Lebanon - 96135</a></li>
+          </ul>
+        </div>
+        
+        <div class="dish-content box box">
+          <h3 class="heading">follow us
+          </h3>
+          <ul class="links">
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">linkedin</a></li>
+            <li><a href="#">twitter</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="credit">copyright @ 2022 by <span>Sara Shaarawy</span></div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/layout.js"></script>
+  </body>
+</html>
